@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selector Forms</title>
+
+    <style>
+        /* ---------- SIMPLE SELECTORS ---------- */
+
+        /* Universal Selector */
+        * {
+            font-family: Arial;
+        }
+
+        /* Element Selector */
+        p {
+            color: blue;
+        }
+
+        /* ID Selector */
+        #mainBox {
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+
+        /* Class Selector */
+        .highlight {
+            color: red;
+            font-weight: bold;
+        }
+
+        /* Group Selector */
+        h1, h2 {
+            color: green;
+        }
+
+        /* ---------- COMBINATOR SELECTORS ---------- */
+
+        /* Descendant Selector */
+        div p {
+            background-color: #e3f2fd;
+        }
+
+        /* Child Selector */
+        div > span {
+            color: purple;
+        }
+
+        /* Adjacent Sibling Selector */
+        h2 + p {
+            color: orange;
+        }
+
+        /* General Sibling Selector */
+        h2 ~ p {
+            font-style: italic;
+        }
+
+        /* ---------- PSEUDO-CLASS SELECTOR ---------- */
+        a:hover {
+            color: red;
+        }
+
+        /* ---------- PSEUDO-ELEMENT SELECTOR ---------- */
+        p::first-letter {
+            font-size: 25px;
+        }
+
+        /* ---------- ATTRIBUTE SELECTOR ---------- */
+        input[type="text"] {
+            border: 2px solid green;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>CSS Selector Forms</h1>
+
+<div id="mainBox">
+    <p>This paragraph uses element and descendant selector.</p>
+    <span>This span uses child selector</span>
+</div>
+
+<h2>Combinator Example</h2>
+<p>This paragraph uses adjacent sibling selector.</p>
+<p>This paragraph uses general sibling selector.</p>
+
+<p class="highlight">This text uses class selector.</p>
+
+<a href="#">Hover over this link</a>
+<br><br>
+
+<input type="text" placeholder="Attribute selector example">
+
+</body>
+</html>
