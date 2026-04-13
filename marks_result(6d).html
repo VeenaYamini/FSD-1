@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Result</title>
+</head>
+
+<body>
+
+    <h2>Student Result Info</h2>
+
+    <script>
+
+        var name = prompt("Enter your name:");
+        var marks = prompt("Enter your marks out of 100:");
+
+        var result;
+
+        if (marks >= 35) {
+            result = "Pass";
+        } else {
+            result = "Fail";
+        }
+
+        document.write("<table border='1' cellpadding='10'>");
+
+        document.write("<tr><th>Name</th><th>Marks</th><th>Result</th></tr>");
+
+        document.write("<tr>");
+        document.write("<td>" + name + "</td>");
+        document.write("<td>" + marks + "</td>");
+        document.write("<td>" + result + "</td>");
+        document.write("</tr>");
+
+        document.write("</table>");
+
+    </script>
+
+</body>
+</html>
